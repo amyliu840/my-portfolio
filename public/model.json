@@ -1,0 +1,76 @@
+{
+  "dealers": [
+    {
+      "dealerId": 968316708,
+      "name": "Bob's Cars",
+      "vehicles": [
+        {
+          "vehicleId": 1985208941,
+          "year": 2016,
+          "make": "Honda",
+          "model": "Accord"
+        },
+        {
+          "vehicleId": 1090109323,
+          "year": 2014,
+          "make": "Ford",
+          "model": "F150"
+        },
+        {
+          "vehicleId": 1217893089,
+          "year": 2004,
+          "make": "MINI",
+          "model": "Cooper"
+        }
+      ]
+    },
+    {
+      "dealerId": 1354637035,
+      "name": "House of Wheels",
+      "vehicles": [
+        {
+          "vehicleId": 861161322,
+          "year": 2013,
+          "make": "Mitsubishi",
+          "model": "Gallant"
+        },
+        {
+          "vehicleId": 2053863191,
+          "year": 2009,
+          "make": "Ford",
+          "model": "F150"
+        },
+        {
+          "vehicleId": 2013380879,
+          "year": 2016,
+          "make": "Kia",
+          "model": "Soul"
+        }
+      ]
+    },
+    {
+      "dealerId": 1543436536,
+      "name": "Doug's Doozies",
+      "vehicles": [
+        {
+          "vehicleId": 1650126390,
+          "year": 2016,
+          "make": "Bentley",
+          "model": "Mulsanne"
+        },
+        {
+          "vehicleId": 1924651655,
+          "year": 2012,
+          "make": "Nissan",
+          "model": "Altima"
+        },
+        {
+          "vehicleId": 605682541,
+          "year": 1979,
+          "make": "Cheverolet",
+          "model": "Corvette"
+        }
+      ]
+    }
+  ]
+}
