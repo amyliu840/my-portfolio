@@ -13,3 +13,7 @@ npm start
 ```
 
 Please navigate to http://localhost:3000 in your browser of choice.
+
+## Technology Stack 
+- React
+- Semantic UI
