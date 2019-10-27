@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
+import { Header } from 'semantic-ui-react';
 import './Main.css';
 
 class Main extends Component {
+  state = { activeItem: 'about-me' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+    const { activeItem } = this.state;
 
     return (
-      <div className="main">
-        <div className="about-container">
-          <h3>About Me</h3>
-        </div>
-        <div className="experience-container">
-          <h3>Experience</h3>
-        </div>
-        <div className="contact-me-container">
-          <h3>Contact Me</h3>
-        </div>
+      <div>
+        <Header size="huge" className="name-container">Hello, I'm Amy Liu</Header>
       </div>
     );
   }

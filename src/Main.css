@@ -1,35 +1,6 @@
-.title {
-  text-align: center;
-  min-height: 100px;
-}
-
-.image-container {
-	height: 50%;
-	position: relative;
-}
-
-img {
-  position: absolute;
-  left: 50%;
-  right: 50%;
+.name-container {
+  position: fixed; 
+  left: 50%; 
+  top: 50%; 
   transform: translate(-50%, -50%);
-}
-
-.grid-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.pagination-container {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  padding: 10px;
-}
-
-.pagination-container a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
 }
