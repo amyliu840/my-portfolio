@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header } from 'semantic-ui-react';
 import './Main.css';
 
-class Main extends Component {
+class Experience extends Component {
   state = { activeItem: 'about-me' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -44,4 +44,4 @@ class Main extends Component {
 
 }
 
-export default Main;
+export default Experience;
