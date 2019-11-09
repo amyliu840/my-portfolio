@@ -46,7 +46,7 @@ class App extends Component {
             />
           </Menu>
         </div>
-        <Main />
+        <Header size="huge" className="name-container">Hello, I'm Amy Liu</Header>
         <div className="App-footer"></div>
       </div>
     );
