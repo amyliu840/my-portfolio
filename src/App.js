@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Input, Menu, Button } from 'semantic-ui-react';
+import { Input, Menu, Button, Header } from 'semantic-ui-react';
+import AboutMe from './About-me';
+import Experience from './Experience';
+import $ from 'jquery';
 import './App.css';
-import Main from './Main';
+
 
 class App extends Component {
 
@@ -10,10 +13,10 @@ class App extends Component {
     this.state = {
       activeItem: 'about-me'
     }
+
+    this.handleItemClick.bind(this);
   }
 
-  handleItemClick = (e, { name }) => this.ListeningStateChangedEvent({ activeItem: name });
-  
   componentDidMount() {
     
   }
@@ -21,6 +24,19 @@ class App extends Component {
   componentDidUpdate(prevProps, prevState, snapshot) {
 
   }
+
+
+  handleItemClick = ({ name }) => {
+        console.log('on clicked', name);
+    this.ListeningStateChangedEvent({ activeItem: name });
+  }
+
+
+  ListeningStateChangedEvent = ({ name }) => {
+    console.log('clicked change', name);
+    // $('html,body'.animate({ scrollTop: document.querySelector(`#${name}`).offsetTop }, 200));
+  } 
+  
 
   render() {
     const { activeItem } = this.state;
@@ -32,21 +48,27 @@ class App extends Component {
             <Menu.Item
               name='About Me'
               active={activeItem === 'about-me'}
-              onClick={this.handleItemClick}
+              onClick={this.handleItemClick.bind({ name: 'about-me' })}
             />         
             <Menu.Item
               name='Experience'
               active={activeItem === 'experience'}
-              onClick={this.handleItemClick}
+              onClick={this.handleItemClick.bind({ name: 'experience' })}
             />
             <Menu.Item
               name='Contact Me'
               active={activeItem === 'contact-me'}
-              onClick={this.handleItemClick}
+              onClick={this.handleItemClick.bind({ name: 'contact-me' })}
             />
           </Menu>
         </div>
-        <Header size="huge" className="name-container">Hello, I'm Amy Liu</Header>
+        <div class="name-container">
+          <h1>Hello, I'm Amy Liu</h1>
+        </div>
+        <div id="about-me" class="about-me-container">
+          <AboutMe />
+        </div>
+        <Experience />
         <div className="App-footer"></div>
       </div>
     );
