@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
-import './Main.css';
+import { Card, Icon } from 'semantic-ui-react';
+import { Carousel } from 'react-bootstrap';
+import './Experience.css';
 
 class Experience extends Component {
   state = { activeItem: 'about-me' }
@@ -16,28 +17,23 @@ class Experience extends Component {
     ];
 
     return (
-      <div>
-        <Card>
-          <Card.Content header='Pfizer' />
-          <Card.Content description={description} />
-          <Card.Content extra>
-            <Icon name='user' />4 Friends
-          </Card.Content>
-        </Card>  
-        <Card>
-          <Card.Content header='Voya Financial' />
-          <Card.Content description={description} />
-          <Card.Content extra>
-            <Icon name='user' />4 Friends
-          </Card.Content>
-        </Card>     
-        <Card>
-          <Card.Content header='Northwestern Mutual' />
-          <Card.Content description={description} />
-          <Card.Content extra>
-            <Icon name='user' />4 Friends
-          </Card.Content>
-        </Card> 
+      <div id="experience" className="experience-container">
+        <Carousel>
+          <Carousel.Item>
+              <h3>Pfizer</h3>
+              <p>{description}</p>
+          </Carousel.Item>
+
+          <Carousel.Item>
+              <h3>Voya Financial</h3>
+              <p>{description}</p>
+          </Carousel.Item>  
+
+          <Carousel.Item>
+              <h3>Northwestern Mutual</h3>
+              <p>{description}</p>
+          </Carousel.Item> 
+        </Carousel>
       </div>
     );
   }
