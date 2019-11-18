@@ -54,13 +54,21 @@ h5.ui.header {
 
 .name-container {
   position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+  text-align: center;
+  /* border-width: 2px;
+  border-color: red;
+  border-style: solid; */
 }
 
 .name-container h1 {
+  /* border-width: 2px;
+  border-color: green;
+  border-style: solid; */
   position: absolute;
-  left: 30%;
-  top: 30%;
-  transform: translate(-30%, -30%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .about-me-container {
