@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'; //import semantic ui style here
+import 'bootstrap/dist/css/bootstrap.min.css'; // import bootstrap style here
 
 ReactDOM.render(
   <App />,
