@@ -20,18 +20,33 @@ class Experience extends Component {
       <div id="experience" className="experience-container">
         <Carousel>
           <Carousel.Item>
-              <h3>Pfizer</h3>
-              <p>{description}</p>
+            <Card>
+              <Card.Content>
+                <Card.Header>Pfizer</Card.Header>
+                <Card.Meta>March 2017 - January 2019</Card.Meta>
+                <Card.Description>{description}</Card.Description>
+              </Card.Content>
+            </Card>
           </Carousel.Item>
 
           <Carousel.Item>
-              <h3>Voya Financial</h3>
-              <p>{description}</p>
+            <Card>
+              <Card.Content>
+                <Card.Header>Voya Financial</Card.Header>
+                <Card.Meta>July 2016 - January 2017</Card.Meta>
+                <Card.Description>{description}</Card.Description>
+              </Card.Content>
+            </Card>
           </Carousel.Item>  
 
           <Carousel.Item>
-              <h3>Northwestern Mutual</h3>
-              <p>{description}</p>
+            <Card>
+              <Card.Content>
+                <Card.Header>Northwestern Mutual</Card.Header>
+                <Card.Meta>June 2015 - June 2016</Card.Meta>
+                <Card.Description>{description}</Card.Description>
+              </Card.Content>
+            </Card>
           </Carousel.Item> 
         </Carousel>
       </div>

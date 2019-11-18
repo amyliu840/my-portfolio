@@ -1,10 +1,10 @@
 .experience-container {
   position: relative;
   top: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 .ui.card {
