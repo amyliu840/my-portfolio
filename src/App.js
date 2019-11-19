@@ -65,9 +65,7 @@ class App extends Component {
         <div class="name-container">
           <h1>Hello, I'm Amy Liu</h1>
         </div>
-        <div id="about-me" class="about-me-container">
-          <AboutMe />
-        </div>
+        <AboutMe />
         <Experience />
         <div className="App-footer"></div>
       </div>

@@ -1,0 +1,13 @@
+.about-me-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  min-width: 600px;
+}
+
+.about-me-container h3 {
+  text-align: center;
+}
+
+
