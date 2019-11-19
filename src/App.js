@@ -43,7 +43,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="App-header">
+        <header>
           <Menu secondary className="header-menu">
             <Menu.Item
               name='About Me'
@@ -61,13 +61,13 @@ class App extends Component {
               onClick={this.handleItemClick.bind({ name: 'contact-me' })}
             />
           </Menu>
-        </div>
+        </header>
         <div class="name-container">
           <h1>Hello, I'm Amy Liu</h1>
         </div>
         <AboutMe />
         <Experience />
-        <div className="App-footer"></div>
+        <footer>Powered By Pexels, Creat React App, Semantic UI</footer>
       </div>
     );
   }

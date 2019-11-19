@@ -59,3 +59,9 @@ h5.ui.header {
   transform: translateY(-30%);
   text-align: center;
 }
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
