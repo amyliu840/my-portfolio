@@ -26,15 +26,17 @@ class App extends Component {
   }
 
 
-  handleItemClick = ({ name }) => {
-        console.log('on clicked', name);
-    this.ListeningStateChangedEvent({ activeItem: name });
+  handleItemClick = (e, { name }) => {
+        console.log('on clicked', e, name);
+    this.ListeningStateChangedEvent({ activeItem: name.toLowerCase() });
   }
 
 
-  ListeningStateChangedEvent = ({ name }) => {
-    console.log('clicked change', name);
-    // $('html,body'.animate({ scrollTop: document.querySelector(`#${name}`).offsetTop }, 200));
+  ListeningStateChangedEvent = ({ activeItem }) => {
+    console.log('clicked change', activeItem);
+    const activeElement = document.querySelector(`#${activeItem}`);
+    activeElement.animate({ scrollTop: activeElement.offsetTop }, 200)
+    // $('body'.animate({ scrollTop: document.querySelector(`#${activeItem}`).offsetTop}, 200));
   } 
   
 
@@ -46,19 +48,14 @@ class App extends Component {
         <header>
           <Menu secondary className="header-menu">
             <Menu.Item
-              name='About Me'
+              name='about-me'
               active={activeItem === 'about-me'}
-              onClick={this.handleItemClick.bind({ name: 'about-me' })}
+              onClick={this.handleItemClick}
             />         
             <Menu.Item
-              name='Experience'
+              name='experience'
               active={activeItem === 'experience'}
-              onClick={this.handleItemClick.bind({ name: 'experience' })}
-            />
-            <Menu.Item
-              name='Contact Me'
-              active={activeItem === 'contact-me'}
-              onClick={this.handleItemClick.bind({ name: 'contact-me' })}
+              onClick={this.handleItemClick}
             />
           </Menu>
         </header>
