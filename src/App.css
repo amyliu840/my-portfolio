@@ -8,6 +8,11 @@
   height: 80px;
 }
 
+header {
+  height: 1.5em;
+  margin: 1em;
+}
+
 .header-menu {
   float: right;
 }
@@ -53,15 +58,10 @@ h5.ui.header {
 }
 
 .name-container {
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
+  margin-top: 20%;
   text-align: center;
 }
 
 footer {
-  position: fixed;
-  bottom: 1em;
-  left: 1em;
+  padding: 1em;
 }
