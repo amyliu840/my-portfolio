@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Input, Menu, Button, Header } from 'semantic-ui-react';
 import AboutMe from './About-me';
 import Experience from './Experience';
-import $ from 'jquery';
+import Project from './Project';
 import './App.css';
 
 
@@ -57,6 +57,11 @@ class App extends Component {
               active={activeItem === 'experience'}
               onClick={this.handleItemClick}
             />
+            <Menu.Item
+              name='projects'
+              active={activeItem === 'projects'}
+              onClick={this.handleItemClick}
+            />
           </Menu>
         </header>
         <div class="name-container">
@@ -64,6 +69,7 @@ class App extends Component {
         </div>
         <AboutMe />
         <Experience />
+        <Project />
         <footer>Powered By Pexels, Creat React App, Semantic UI</footer>
       </div>
     );
