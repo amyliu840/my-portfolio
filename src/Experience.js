@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon } from 'semantic-ui-react';
+import { Card, Reveal } from 'semantic-ui-react';
 import { Carousel } from 'react-bootstrap';
 import './Experience.css';
 
@@ -18,37 +18,28 @@ class Experience extends Component {
 
     return (
       <div id="experience" className="experience-container">
-        <Carousel>
-          <Carousel.Item>
-            <Card>
-              <Card.Content>
-                <Card.Header>Pfizer</Card.Header>
-                <Card.Meta>March 2017 - January 2019</Card.Meta>
-                <Card.Description>{description}</Card.Description>
-              </Card.Content>
-            </Card>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Card>
-              <Card.Content>
-                <Card.Header>Voya Financial</Card.Header>
-                <Card.Meta>July 2016 - January 2017</Card.Meta>
-                <Card.Description>{description}</Card.Description>
-              </Card.Content>
-            </Card>
-          </Carousel.Item>  
-
-          <Carousel.Item>
-            <Card>
-              <Card.Content>
-                <Card.Header>Northwestern Mutual</Card.Header>
-                <Card.Meta>June 2015 - June 2016</Card.Meta>
-                <Card.Description>{description}</Card.Description>
-              </Card.Content>
-            </Card>
-          </Carousel.Item> 
-        </Carousel>
+        <h3>Experience</h3>
+          <Card>
+            <Card.Content>
+              <Card.Header>Pfizer</Card.Header>
+              <Card.Meta>March 2017 - January 2019</Card.Meta>
+              <Card.Description>{description}</Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <Card.Header>Voya Financial</Card.Header>
+              <Card.Meta>July 2016 - January 2017</Card.Meta>
+              <Card.Description>{description}</Card.Description>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Card.Content>
+              <Card.Header>Northwestern Mutual</Card.Header>
+              <Card.Meta>June 2015 - June 2016</Card.Meta>
+              <Card.Description>{description}</Card.Description>
+            </Card.Content>
+          </Card>
       </div>
     );
   }
