@@ -70,7 +70,7 @@ class App extends Component {
         <AboutMe />
         <Experience />
         <Project />
-        <footer>Powered By Pexels, Creat React App, Semantic UI</footer>
+        <footer>Powered By <a href="https://www.pexels.com" taget="_blank">Pexels</a>, <a href="https://create-react-app.dev/" taget="_blank">Creat React App</a> and <a href="https://react.semantic-ui.com/" taget="_blank">Semantic UI React</a></footer>
       </div>
     );
   }
