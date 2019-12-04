@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Input, Menu, Button, Header } from 'semantic-ui-react';
 import AboutMe from './About-me';
 import Experience from './Experience';
+import Project from './project';
 import './App.css';
 
 
@@ -59,6 +60,7 @@ class App extends Component {
         </div>
         <AboutMe />
         <Experience />
+        <Project />
         <footer>Powered By Pexels, Creat React App, Semantic UI</footer>
       </div>
     );

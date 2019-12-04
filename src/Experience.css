@@ -1,4 +1,8 @@
 .experience-container {
-  position: relative;
-  top: 100%;
+  margin: 2em;
+  padding: 1em;
+}
+
+.ui.card {
+  min-width: 500px;
 }

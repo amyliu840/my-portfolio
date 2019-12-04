@@ -30,8 +30,10 @@ function Experience() {
     'northwestern-mutual': [
       'Built a web-based financial mapping tool',
       'Designed and implemented Flux pattern with backbone.js',
+      'Built reusable map and view components',
       'Implemented Google Maps JavaScript API and d3 map API to visually showing data on the map: markers, bubbles, polygons, polylines, data layers and spontaneous response to user interaction',
       'Built two hybrid mobile applications for iPhone, iPad and Android phone. Features: phone call, message and email, etc.',
+      'Built the application backend with Node.js, express.js', 
       'Implemented microservice architecture with Node.js, Express.js',
       'Worked under Scrum/Agile methodology'
     ]
@@ -39,6 +41,7 @@ function Experience() {
 
   return (
     <div id="experience" className="experience-container">
+      <h3>Experience</h3>
       <AutoPlaySwipeableViews>
           <Card>
             <Card.Content>
