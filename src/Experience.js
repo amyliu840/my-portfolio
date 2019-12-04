@@ -6,91 +6,84 @@ import './Experience.css';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-class Experience extends Component {
-  state = { activeItem: 'about-me' }
+function Experience() {
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state;
-    const description = {
-      'pfizer': [
-        'Designed, implemented, tested and softly released the web applications based on React, Redux, Webpack and Semantic UI',
-        'Visualized, analyzed and mined large-scale dataset with d3.js, dc.js, and crossfilter.js',
-        'Implemented the application backend based on Node.js, express.js and Solr',
-        'Beautified and enhanced UI in current web applications',
-        'Worked with Compliance department and implemented software applications under FDA regulations',
-        'Introduced test-driven development and improved code quality and project consistence',
-        'Raised further production funds for one business solution'
-      ],
-      'voya-financial': [
-        'Built a financial enrollment tool',
-        'Increased app customer rating into 8.4/10 (Top Rank 4)',
-        'Increased team velocity by 300%',
-        'Architecture Level Improvement: Marionette Events System, Component-based architecture, FLUX unidirectional architecture and data flow, BEM-based SASS architecture including layout, patterns, and helpers and customized SASS, Modern App View Layers',
-        'Built responsive and adaptive web application for desktop and mobile screens',
-        'Worked under Continuous Integration (CI) and Continuous Delivery (CD) using Git & Jenkins',
-        'Link: https://enroll.voya.com/'
-      ],
-      'northwestern-mutual': [
-        'Built a web-based financial mapping tool',
-        'Designed and implemented Flux pattern with backbone.js',
-        'Implemented Google Maps JavaScript API and d3 map API to visually showing data on the map: markers, bubbles, polygons, polylines, data layers and spontaneous response to user interaction',
-        'Built two hybrid mobile applications for iPhone, iPad and Android phone. Features: phone call, message and email, etc.',
-        'Implemented microservice architecture with Node.js, Express.js',
-        'Worked under Scrum/Agile methodology'
-      ]
-    }
-
-    return (
-      <div id="experience" className="experience-container">
-        <AutoPlaySwipeableViews>
-            <Card>
-              <Card.Content>
-                <Card.Header>Pfizer</Card.Header>
-                <Card.Meta>March 2017 - January 2019</Card.Meta>
-                <Card.Description>
-                  <List bulleted>
-                    {description['pfizer'].map(item => 
-                      <List.Item>{item}</List.Item>
-                    )}
-                  </List>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-
-            <Card>
-              <Card.Content>
-                <Card.Header>Voya Financial</Card.Header>
-                <Card.Meta>July 2016 - January 2017</Card.Meta>
-                <Card.Description>
-                  <List bulleted>
-                    {description['voya-financial'].map(item => 
-                      <List.Item>{item}</List.Item>
-                    )}
-                  </List>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-
-            <Card>
-              <Card.Content>
-                <Card.Header>Northwestern Mutual</Card.Header>
-                <Card.Meta>June 2015 - June 2016</Card.Meta>
-                <Card.Description>
-                  <List bulleted>
-                    {description['northwestern-mutual'].map(item => 
-                      <List.Item>{item}</List.Item>
-                    )}
-                  </List>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-        </AutoPlaySwipeableViews>
-      </div>
-    );
+  const description = {
+    'pfizer': [
+      'Designed, implemented, tested and softly released the web applications based on React, Redux, Webpack and Semantic UI',
+      'Visualized, analyzed and mined large-scale dataset with d3.js, dc.js, and crossfilter.js',
+      'Implemented the application backend based on Node.js, express.js and Solr',
+      'Beautified and enhanced UI in current web applications',
+      'Worked with Compliance department and implemented software applications under FDA regulations',
+      'Introduced test-driven development and improved code quality and project consistence',
+      'Raised further production funds for one business solution'
+    ],
+    'voya-financial': [
+      'Built a financial enrollment tool',
+      'Increased app customer rating into 8.4/10 (Top Rank 4)',
+      'Increased team velocity by 300%',
+      'Architecture Level Improvement: Marionette Events System, Component-based architecture, FLUX unidirectional architecture and data flow, BEM-based SASS architecture including layout, patterns, and helpers and customized SASS, Modern App View Layers',
+      'Built responsive and adaptive web application for desktop and mobile screens',
+      'Worked under Continuous Integration (CI) and Continuous Delivery (CD) using Git & Jenkins',
+      'Link: https://enroll.voya.com/'
+    ],
+    'northwestern-mutual': [
+      'Built a web-based financial mapping tool',
+      'Designed and implemented Flux pattern with backbone.js',
+      'Implemented Google Maps JavaScript API and d3 map API to visually showing data on the map: markers, bubbles, polygons, polylines, data layers and spontaneous response to user interaction',
+      'Built two hybrid mobile applications for iPhone, iPad and Android phone. Features: phone call, message and email, etc.',
+      'Implemented microservice architecture with Node.js, Express.js',
+      'Worked under Scrum/Agile methodology'
+    ]
   }
 
+  return (
+    <div id="experience" className="experience-container">
+      <AutoPlaySwipeableViews>
+          <Card>
+            <Card.Content>
+              <Card.Header>Pfizer</Card.Header>
+              <Card.Meta>March 2017 - January 2019</Card.Meta>
+              <Card.Description>
+                <List bulleted>
+                  {description['pfizer'].map(item => 
+                    <List.Item>{item}</List.Item>
+                  )}
+                </List>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Card.Content>
+              <Card.Header>Voya Financial</Card.Header>
+              <Card.Meta>July 2016 - January 2017</Card.Meta>
+              <Card.Description>
+                <List bulleted>
+                  {description['voya-financial'].map(item => 
+                    <List.Item>{item}</List.Item>
+                  )}
+                </List>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Card.Content>
+              <Card.Header>Northwestern Mutual</Card.Header>
+              <Card.Meta>June 2015 - June 2016</Card.Meta>
+              <Card.Description>
+                <List bulleted>
+                  {description['northwestern-mutual'].map(item => 
+                    <List.Item>{item}</List.Item>
+                  )}
+                </List>
+              </Card.Description>
+            </Card.Content>
+          </Card>
+      </AutoPlaySwipeableViews>
+    </div>
+  );
 }
 
 export default Experience;

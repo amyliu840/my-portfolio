@@ -16,15 +16,6 @@ class App extends Component {
     this.handleItemClick.bind(this);
   }
 
-  componentDidMount() {
-    
-  }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-
-  }
-
-
   handleItemClick = (e, { name }) => {
     this.ListeningStateChangedEvent({ activeItem: name.toLowerCase() });
   }
@@ -32,7 +23,7 @@ class App extends Component {
 
   ListeningStateChangedEvent = ({ activeItem }) => {
     const activeElement = document.querySelector(`#${activeItem}`);
-    activeElement.animate({ scrollTop: activeElement.offsetTop }, 200)
+    activeElement.animate({ scrollTop: activeElement.offsetTop }, 200);
   } 
   
 
