@@ -57,6 +57,7 @@ class App extends Component {
         </header>
         <div class="name-container">
           <h1>Hello, I'm Amy Liu</h1>
+          <h4>Senior Frontend Engineer</h4>
         </div>
         <AboutMe />
         <Experience />
