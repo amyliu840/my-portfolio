@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
 import './About-me.css';
 
 class AboutMe extends Component {

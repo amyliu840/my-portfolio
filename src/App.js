@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Input, Menu, Button, Header } from 'semantic-ui-react';
 import AboutMe from './About-me';
 import Experience from './Experience';
-import $ from 'jquery';
 import './App.css';
 
 
@@ -27,16 +26,13 @@ class App extends Component {
 
 
   handleItemClick = (e, { name }) => {
-        console.log('on clicked', e, name);
     this.ListeningStateChangedEvent({ activeItem: name.toLowerCase() });
   }
 
 
   ListeningStateChangedEvent = ({ activeItem }) => {
-    console.log('clicked change', activeItem);
     const activeElement = document.querySelector(`#${activeItem}`);
     activeElement.animate({ scrollTop: activeElement.offsetTop }, 200)
-    // $('body'.animate({ scrollTop: document.querySelector(`#${activeItem}`).offsetTop}, 200));
   } 
   
 
@@ -51,11 +47,19 @@ class App extends Component {
               name='about-me'
               active={activeItem === 'about-me'}
               onClick={this.handleItemClick}
+              disabled
             />         
             <Menu.Item
               name='experience'
               active={activeItem === 'experience'}
               onClick={this.handleItemClick}
+              disabled
+            />
+            <Menu.Item
+              name='project'
+              active={activeItem === 'project'}
+              onClick={this.handleItemClick}
+              disabled
             />
           </Menu>
         </header>

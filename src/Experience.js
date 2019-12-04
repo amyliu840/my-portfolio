@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Card, Icon } from 'semantic-ui-react';
-import { Carousel } from 'react-bootstrap';
+import { Card } from 'semantic-ui-react';
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay } from 'react-swipeable-views-utils';
 import './Experience.css';
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 class Experience extends Component {
   state = { activeItem: 'about-me' }
@@ -18,8 +21,7 @@ class Experience extends Component {
 
     return (
       <div id="experience" className="experience-container">
-        <Carousel>
-          <Carousel.Item>
+        <AutoPlaySwipeableViews>
             <Card>
               <Card.Content>
                 <Card.Header>Pfizer</Card.Header>
@@ -27,9 +29,7 @@ class Experience extends Component {
                 <Card.Description>{description}</Card.Description>
               </Card.Content>
             </Card>
-          </Carousel.Item>
 
-          <Carousel.Item>
             <Card>
               <Card.Content>
                 <Card.Header>Voya Financial</Card.Header>
@@ -37,9 +37,7 @@ class Experience extends Component {
                 <Card.Description>{description}</Card.Description>
               </Card.Content>
             </Card>
-          </Carousel.Item>  
 
-          <Carousel.Item>
             <Card>
               <Card.Content>
                 <Card.Header>Northwestern Mutual</Card.Header>
@@ -47,8 +45,7 @@ class Experience extends Component {
                 <Card.Description>{description}</Card.Description>
               </Card.Content>
             </Card>
-          </Carousel.Item> 
-        </Carousel>
+        </AutoPlaySwipeableViews>
       </div>
     );
   }
