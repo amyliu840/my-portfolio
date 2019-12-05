@@ -17,4 +17,4 @@ Please navigate to http://localhost:3000 in your browser of choice.
 ## Technology Stack 
 - React
 - Semantic 
-- [React Swipeable Views](https://react-swipeable-views.com/getting-started/installation/)
+- React Swipeable Views
