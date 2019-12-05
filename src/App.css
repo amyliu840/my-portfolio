@@ -9,7 +9,7 @@
 }
 
 header {
-  height: 1.5em;
+  height: 2em;
   margin: 1em;
 }
 
@@ -19,37 +19,6 @@ header {
 
 .App-intro {
   font-size: large;
-}
-
-h1.ui.header {
-  font-size: 2rem;
-}
-
-h2.ui.header {
-  font-size: 1.71428571rem;
-}
-
-h3.ui.header {
-  font-size: 1.28571429rem;
-}
-
-h4.ui.header {
-  font-size: 1.07142857rem; /* use as page header as well */
-}
-
-h5.ui.header {
-  font-size: 1rem;
-}
-
-.ui.header {
-  border: none;
-  margin: calc(2rem - .14285714em) 0 1rem;
-  padding: 0 0;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  font-weight: 700;
-  line-height: 1.28571429em;
-  text-transform: none;
-  color: rgba(0,0,0,.87);
 }
 
 @keyframes App-logo-spin {

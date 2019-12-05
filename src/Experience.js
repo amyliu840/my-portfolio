@@ -45,8 +45,7 @@ function Experience() {
       <AutoPlaySwipeableViews>
           <Card>
             <Card.Content>
-              <Card.Header>Senior Frontend Engineer</Card.Header>
-              <h5>Pfizer</h5>
+              <Card.Header>Senior Frontend Engineer<br />Pfizer</Card.Header>
               <Card.Meta>March 2017 - January 2019</Card.Meta>
               <Card.Description>
                 <List bulleted>
@@ -60,8 +59,7 @@ function Experience() {
 
           <Card>
             <Card.Content>
-              <Card.Header>Senior Frontend Engineer</Card.Header>
-              <h5>Voya Financial</h5>
+              <Card.Header>Senior Frontend Engineer<br />Voya Financial</Card.Header>
               <Card.Meta>July 2016 - January 2017</Card.Meta>
               <Card.Description>
                 <List bulleted>
@@ -75,8 +73,7 @@ function Experience() {
 
           <Card>
             <Card.Content>
-              <Card.Header>Full Stack Engineer</Card.Header>
-              <h5>Northwestern Mutual</h5>
+              <Card.Header>Full Stack Engineer<br />Northwestern Mutual</Card.Header>
               <Card.Meta>June 2015 - June 2016</Card.Meta>
               <Card.Description>
                 <List bulleted>
