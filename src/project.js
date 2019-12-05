@@ -12,7 +12,16 @@ function Project() {
           <Card.Content>
             <Card.Header>Car Dealer App</Card.Header>
             <Card.Description>{description}</Card.Description>
-            <a></a>
+            <List bulleted>
+              <List.Item>
+                <a href="https://github.com/amyliu840/car-dealer-app" 
+                target="_blank">Project Github Link</a>
+              </List.Item>
+              <List.Item>
+                <a href="https://github.com/amyliu840/car-dealer-app" 
+                target="_blank">Project Github Link</a>
+              </List.Item>
+            </List>
           </Card.Content>
         </Card>
     </div>
