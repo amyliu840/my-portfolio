@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Input, Menu, Button, Header } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import AboutMe from './About-me';
 import Experience from './Experience';
-import Project from './project';
+import Project from './Project';
 import './App.css';
 
 
@@ -52,6 +52,11 @@ class App extends Component {
               active={activeItem === 'project'}
               onClick={this.handleItemClick}
               disabled
+            />
+            <Menu.Item
+              name='projects'
+              active={activeItem === 'projects'}
+              onClick={this.handleItemClick}
             />
           </Menu>
         </header>

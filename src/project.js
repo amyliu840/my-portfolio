@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react';
-import './project.css';
+import { Card, List } from 'semantic-ui-react';
+import './Project.css';
 
 function Project() {
   const description = 'Car Dealer App';
