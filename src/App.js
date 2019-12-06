@@ -53,11 +53,6 @@ class App extends Component {
               onClick={this.handleItemClick}
               disabled
             />
-            <Menu.Item
-              name='projects'
-              active={activeItem === 'projects'}
-              onClick={this.handleItemClick}
-            />
           </Menu>
         </header>
         <div class="name-container">
