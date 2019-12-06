@@ -17,10 +17,6 @@ function Project() {
                 <a href="https://github.com/amyliu840/car-dealer-app" 
                 target="_blank">Project Github Link</a>
               </List.Item>
-              <List.Item>
-                <a href="https://github.com/amyliu840/car-dealer-app" 
-                target="_blank">Project Github Link</a>
-              </List.Item>
             </List>
           </Card.Content>
         </Card>
