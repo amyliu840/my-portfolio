@@ -25,7 +25,6 @@ function Experience() {
       'Architecture Level Improvement: Marionette Events System, Component-based architecture, FLUX unidirectional architecture and data flow, BEM-based SASS architecture including layout, patterns, and helpers and customized SASS, Modern App View Layers',
       'Built responsive and adaptive web application for desktop and mobile screens',
       'Worked under Continuous Integration (CI) and Continuous Delivery (CD) using Git & Jenkins',
-      'Link: https://enroll.voya.com/'
     ],
     'northwestern-mutual': [
       'Built a web-based financial mapping tool',
