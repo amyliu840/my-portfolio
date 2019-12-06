@@ -3,8 +3,6 @@ import { Card, List } from 'semantic-ui-react';
 import './Project.css';
 
 function Project() {
-  const description = 'Car Dealer App';
-
   return (
     <div id="project" className="project-container">
       <h3>Project</h3>
