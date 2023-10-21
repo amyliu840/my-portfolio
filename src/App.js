@@ -5,7 +5,6 @@ import Experience from './Experience';
 import Project from './Project';
 import './App.css';
 
-
 class App extends Component {
 
   constructor(props) {
