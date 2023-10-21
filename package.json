@@ -23,7 +23,8 @@
     "postcss": ">=8.4.31",
     "nth-check": ">=2.0.1",
     "kind-of": ">=6.0.3",
-    "webpack": "5.64.4"
+    "webpack": "5.76.0",
+    "http-proxy": ">=1.18.1"
   },
   "scripts": {
     "start": "react-scripts start",
