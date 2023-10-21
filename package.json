@@ -18,6 +18,11 @@
     "express": "^4.17.3",
     "url": "^0.11.0"
   },
+  "overrides": {
+    "postcss": ">=8.4.31",
+    "nth-check": ">=2.0.1",
+    "kind-of": ">=6.0.3"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
