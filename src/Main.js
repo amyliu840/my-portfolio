@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
 import './Main.css';
 
 class Main extends Component {
@@ -12,7 +11,7 @@ class Main extends Component {
 
     return (
       <div>
-        <Header size="huge" className="name-container">Hello, I'm Amy Liu</Header>
+        <h1 size="huge" className="name-container">Hello, I'm Amy Liu</h1>
       </div>
     );
   }

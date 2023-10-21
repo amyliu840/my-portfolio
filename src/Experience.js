@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Card, List } from 'semantic-ui-react';
+import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import './Experience.css';
@@ -32,7 +31,7 @@ function Experience() {
       'Built reusable map and view components',
       'Implemented Google Maps JavaScript API and d3 map API to visually showing data on the map: markers, bubbles, polygons, polylines, data layers and spontaneous response to user interaction',
       'Built two hybrid mobile applications for iPhone, iPad and Android phone. Features: phone call, message and email, etc.',
-      'Built the application backend with Node.js, express.js', 
+      'Built the application backend with Node.js, express.js',
       'Implemented microservice architecture with Node.js, Express.js',
       'Worked under Scrum/Agile methodology'
     ]
@@ -42,47 +41,38 @@ function Experience() {
     <div id="experience" className="experience-container">
       <h3>Experience</h3>
       <AutoPlaySwipeableViews>
-          <Card>
-            <Card.Content>
-              <Card.Header>Senior Frontend Engineer<br />Pfizer</Card.Header>
-              <Card.Meta>March 2017 - January 2019</Card.Meta>
-              <Card.Description>
-                <List bulleted>
-                  {description['pfizer'].map(item => 
-                    <List.Item>{item}</List.Item>
-                  )}
-                </List>
-              </Card.Description>
-            </Card.Content>
-          </Card>
+        <dl>
+          <dt><h4>Senior Frontend Engineer<br />Pfizer</h4></dt>
+          <dd className='content'><div>March 2017 - January 2019</div>
+            <ul className='list'>
+              {description['pfizer'].map(item =>
+                <li>{item}</li>
+              )}
+            </ul>
+          </dd>
+        </dl>
 
-          <Card>
-            <Card.Content>
-              <Card.Header>Senior Frontend Engineer<br />Voya Financial</Card.Header>
-              <Card.Meta>July 2016 - January 2017</Card.Meta>
-              <Card.Description>
-                <List bulleted>
-                  {description['voya-financial'].map(item => 
-                    <List.Item>{item}</List.Item>
-                  )}
-                </List>
-              </Card.Description>
-            </Card.Content>
-          </Card>
+        <dl>
+          <dt><h4>Senior Frontend Engineer<br />Voya Financial</h4></dt>
+          <dd className='content'><div>July 2016 - January 2017</div>
+            <ul className='list'>
+              {description['voya-financial'].map(item =>
+                <li>{item}</li>
+              )}
+            </ul>
+          </dd>
+        </dl>
 
-          <Card>
-            <Card.Content>
-              <Card.Header>Full Stack Engineer<br />Northwestern Mutual</Card.Header>
-              <Card.Meta>June 2015 - June 2016</Card.Meta>
-              <Card.Description>
-                <List bulleted>
-                  {description['northwestern-mutual'].map(item => 
-                    <List.Item>{item}</List.Item>
-                  )}
-                </List>
-              </Card.Description>
-            </Card.Content>
-          </Card>
+        <dl>
+          <dt><h4>Full Stack Engineer<br />Northwestern Mutual</h4></dt>
+          <dd className='content'><div>June 2015 - June 2016</div>
+            <ul className='list'>
+              {description['northwestern-mutual'].map(item =>
+                <li>{item}</li>
+              )}
+            </ul>
+          </dd>
+        </dl>
       </AutoPlaySwipeableViews>
     </div>
   );

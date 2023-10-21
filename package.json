@@ -6,13 +6,12 @@
   "dependencies": {
     "http-proxy-middleware": "^0.19.1",
     "proxy-middleware": "^0.15.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "16.10",
+    "react-dom": "16.10",
     "react-scripts": "^5.0.1",
     "react-swipeable-views": "^0.13.3",
     "react-swipeable-views-utils": "^0.14.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -23,7 +22,8 @@
   "overrides": {
     "postcss": ">=8.4.31",
     "nth-check": ">=2.0.1",
-    "kind-of": ">=6.0.3"
+    "kind-of": ">=6.0.3",
+    "webpack": "5.64.4"
   },
   "scripts": {
     "start": "react-scripts start",

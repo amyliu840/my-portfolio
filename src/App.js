@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
 import AboutMe from './About-me';
 import Experience from './Experience';
 import Project from './Project';
@@ -16,44 +15,40 @@ class App extends Component {
     this.handleItemClick.bind(this);
   }
 
-  handleItemClick = (e, { name }) => {
+  handleItemClick = ({ name }) => {
     this.ListeningStateChangedEvent({ activeItem: name.toLowerCase() });
   }
-
 
   ListeningStateChangedEvent = ({ activeItem }) => {
     const activeElement = document.querySelector(`#${activeItem}`);
     activeElement.animate({ scrollTop: activeElement.offsetTop }, 200);
-  } 
-  
+  }
 
   render() {
     const { activeItem } = this.state;
 
     return (
       <div className="App">
-        <header>
-          <Menu secondary className="header-menu">
-            <Menu.Item
-              name='about-me'
-              active={activeItem === 'about-me'}
-              onClick={this.handleItemClick}
-              disabled
-            />         
-            <Menu.Item
-              name='experience'
-              active={activeItem === 'experience'}
-              onClick={this.handleItemClick}
-              disabled
-            />
-            <Menu.Item
-              name='project'
-              active={activeItem === 'project'}
-              onClick={this.handleItemClick}
-              disabled
-            />
-          </Menu>
-        </header>
+        <nav>
+          <ul secondary className="header-menu">
+            <a href='#about-me'>
+              <li
+                active={activeItem === 'about-me'}
+                onClick={() => this.handleItemClick({ name: 'about-me' })}
+              >About Me</li></a>
+            <a href="#experience">
+              <li
+                active={activeItem === 'experience'}
+                onClick={() => this.handleItemClick({ name: 'experience' })}
+              >Experience</li>
+            </a>
+            <a href="#project">
+              <li active={activeItem === 'project'}
+                onClick={() => this.handleItemClick({ name: 'project' })}
+              >Project</li>
+            </a>
+          </ul>
+        </nav>
         <div class="name-container">
           <h1>Hello, this is Amy Liu</h1>
           <h3>Senior Frontend Engineer</h3>
@@ -61,7 +56,7 @@ class App extends Component {
         <AboutMe />
         <Experience />
         <Project />
-        <footer>Powered By <a href="https://www.pexels.com" target="_blank">Pexels</a>, <a href="https://create-react-app.dev/" target="_blank">Creat React App</a> and <a href="https://react.semantic-ui.com/" target="_blank">Semantic UI React</a></footer>
+        <footer>Powered By <a href="https://www.pexels.com" target="_blank">Pexels</a>, <a href="https://create-react-app.dev/" target="_blank">Creat React App</a></footer>
       </div>
     );
   }
