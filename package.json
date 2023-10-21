@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Amy Liu",
   "dependencies": {
     "http-proxy-middleware": "^0.19.1",
     "proxy-middleware": "^0.15.0",
