@@ -20,7 +20,7 @@ Please navigate to http://localhost:3000 in your browser of choice.
 - React Swipeable Views
 
 ## UI
-<img width="1435" alt="image" src="https://github.com/amyliu840/my-portfolio/assets/53245596/32da8506-5576-41b3-9d5f-57216818fc63">
+![image](https://github.com/amyliu840/my-portfolio/assets/53245596/67510468-9f8e-440b-af9c-07de296dcf56)
 
 ![image](https://github.com/amyliu840/my-portfolio/assets/53245596/40e48747-5f54-4f43-8c61-e813f2e1334a)
 
