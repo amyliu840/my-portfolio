@@ -43,7 +43,7 @@ function Experience() {
       <AutoPlaySwipeableViews>
         <dl>
           <dt><h4>Senior Frontend Engineer<br />Pfizer</h4></dt>
-          <dd className='content'><div>March 2017 - January 2019</div>
+          <dd className='content'><div className='date'>March 2017 - January 2019</div>
             <ul className='list'>
               {description['pfizer'].map(item =>
                 <li>{item}</li>
@@ -54,7 +54,7 @@ function Experience() {
 
         <dl>
           <dt><h4>Senior Frontend Engineer<br />Voya Financial</h4></dt>
-          <dd className='content'><div>July 2016 - January 2017</div>
+          <dd className='content'><div className='date'>July 2016 - January 2017</div>
             <ul className='list'>
               {description['voya-financial'].map(item =>
                 <li>{item}</li>
@@ -65,7 +65,7 @@ function Experience() {
 
         <dl>
           <dt><h4>Full Stack Engineer<br />Northwestern Mutual</h4></dt>
-          <dd className='content'><div>June 2015 - June 2016</div>
+          <dd className='content'><div className='date'>June 2015 - June 2016</div>
             <ul className='list'>
               {description['northwestern-mutual'].map(item =>
                 <li>{item}</li>

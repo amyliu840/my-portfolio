@@ -42,6 +42,8 @@ header {
 
 footer {
   padding: 1em;
+  font-weight: 300;
+  text-align: center;
 }
 
 .content {
@@ -51,6 +53,11 @@ footer {
 
 .content .list {
   padding-left: 1rem;
+  font-weight: 300;
+}
+
+.content .date {
+  color: grey;
 }
 
 nav ul {

@@ -4,4 +4,6 @@
   min-width: 600px;
 }
 
-
+.about-me-container ul li {
+  font-weight: 300;
+}
