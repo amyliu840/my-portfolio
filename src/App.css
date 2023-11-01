@@ -32,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   min-height: 16rem;
 }
 
