@@ -17,6 +17,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "axios": "^0.21.1",
     "express": "^4.17.3",
+    "react-app-rewired": "^2.2.1",
+    "rewire": "^7.0.0",
     "url": "^0.11.0"
   },
   "overrides": {
@@ -27,9 +29,9 @@
     "http-proxy": ">=1.18.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "browserslist": [
