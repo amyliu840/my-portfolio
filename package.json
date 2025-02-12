@@ -28,11 +28,9 @@
     "webpack": "5.94.0",
     "http-proxy": ">=1.18.1",
     "webpack-dev-server": {
-      "ws": "8.17.1"
-    },
-    "jsdom": {
-      "ws": "8.17.1"
-    },
+      "ws": "^8.17.1"
+    },    
+    "jsdom": "25.0.0",
     "react-scripts": {
       "webpack": "5.94.0"
     }
