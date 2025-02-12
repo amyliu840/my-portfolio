@@ -57,7 +57,7 @@ class App extends Component {
         <Experience />
         <Project />
         <footer>
-          Powered By <a href="https://www.pexels.com" target="_blank">Pexels</a>, <a href="https://create-react-app.dev/" target="_blank">Creat React App</a> &copy; 2019-2023 Amy Liu
+          Powered By <a href="https://www.pexels.com" target="_blank">Pexels</a>, <a href="https://create-react-app.dev/" target="_blank">Creat React App</a> &copy; 2019-2025 Amy Liu
         </footer>
       </div>
     );
