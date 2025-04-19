@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "axios": "^1.7.4",
+    "axios": "^1.8.2",
     "express": "^4.21.2",
     "react-app-rewired": "^2.2.1",
     "rewire": "^7.0.0",
