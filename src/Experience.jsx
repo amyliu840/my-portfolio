@@ -1,4 +1,4 @@
-import React from "react";
+import React, {FC} from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import "./Experience.css";
