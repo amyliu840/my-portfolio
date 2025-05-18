@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AboutMe from "./About-me";
-import Experience from "./Experience";
+import Experience from "./Experience.jsx";
 import Project from "./Project";
 import "./App.css";
 
