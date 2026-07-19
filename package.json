@@ -35,7 +35,8 @@
     "start": "vite",
     "build": "vite build",
     "test": "vitest",
-    "format": "npx pretty-quick --staged"
+    "format": "npx pretty-quick --staged",
+    "preview": "vite preview"
   },
   "browserslist": [
     ">0.2%",
