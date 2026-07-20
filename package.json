@@ -15,7 +15,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@vitejs/plugin-react": "^6.0.3",
-    "axios": "^1.16.0",
+    "axios": "^1.18.0",
     "express": "^4.22.2",
     "picomatch": ">=2.3.2",
     "react-app-rewired": "^2.2.1",
