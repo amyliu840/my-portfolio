@@ -16,6 +16,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@vitejs/plugin-react": "^6.0.3",
     "axios": "^1.18.0",
+    "brace-expansion": ">1.1.16",
     "express": "^4.22.2",
     "picomatch": ">=2.3.2",
     "react-app-rewired": "^2.2.1",
